@@ -90,6 +90,11 @@
     diff "^4.0.1"
     util "^0.12.1"
 
+"@vtex/prettier-config@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/@vtex/prettier-config/-/prettier-config-0.0.1.tgz#70e68351b8fb41514e0c7e436847d8e542bfed77"
+  integrity sha512-vRPgnkI+WvlgfZ8oIy862aQGDn/ox0JXu1ECGlKYb8FUyTnidy6ZSJ6fHyFgavZQp780gAk+PgMj/JpAo3DlFA==
+
 ansi-regex@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-3.0.0.tgz#ed0317c322064f79466c02966bddb605ab37d998"

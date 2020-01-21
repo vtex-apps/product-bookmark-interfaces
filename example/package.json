@@ -1,9 +1,5 @@
 {
   "version": "0.0.0",
-  "devDependencies": {
-    "@vtex/intl-equalizer": "^2.3.0",
-    "husky": "^2.4.1"
-  },
   "scripts": {
     "lint": "cd ./react && yarn lint",
     "test": "cd ./react && yarn test --passWithNoTests",
@@ -11,6 +7,15 @@
     "locales:fix": "intl-equalizer --fix",
     "verify": "yarn lint && yarn lint:locales && yarn test"
   },
+  "dependencies": {
+    "react-intl": "^3.10.0"
+  },
+  "devDependencies": {
+    "@vtex/intl-equalizer": "^2.3.0",
+    "@vtex/prettier-config": "^0.0.1",
+    "husky": "^2.4.1"
+  },
+  "prettier": "@vtex/prettier-config",
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint && yarn lint:locales && yarn locales:fix",
@@ -20,8 +25,5 @@
   "intl-equalizer": {
     "referenceLocale": "en",
     "localeDirectory": "messages"
-  },
-  "dependencies": {
-    "react-intl": "^3.10.0"
   }
 }
