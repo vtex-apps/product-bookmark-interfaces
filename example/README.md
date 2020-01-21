@@ -1,34 +1,33 @@
-# Review app example
+# Wish list app example
 
-This is an example of how a review app would integrate with the store framework.
+This is an example of how a wish list app would integrate with the store framework.
 
 ## Troubleshooting
 
-## Blocks does not appear in the product page
+## Block does not appear in the product page
 
 Make sure you have in your `blocks.json`:
 
-```js
-"store.product": {
-  "blocks": [
-    // ...other blocks
-    "product-reviews",
-    "product-rating-summary",
-    "product-questions-and-answers"
-  ]
-}
+```diff
+ "store.product": {
+   "blocks": [
+     // ...other blocks
++    "product-bookmark",
+     // ...other blocks
+   ]
+ }
 ```
 
-## Stars does not appear in shelf
+## Block does not appear in shelf
 
-Make sure you are using the block `product-summary.shelf`. This will not work if it uses the `product-summary`.
+Make sure to add the block in the summary:
 
-```js
-"product-summary.shelf": {
-  "children": [
-    // ...other blocks
-    "product-rating-inline",
-    // ...other blocks
-  ]
-}
+```diff
+ "product-summary.shelf": {
+   "children": [
+     // ...other blocks
++    "product-bookmark",
+     // ...other blocks
+   ]
+ }
 ```

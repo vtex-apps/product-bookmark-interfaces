@@ -44,7 +44,8 @@ const Bookmark: FC<Props> = ({ showToast }) => {
     <div className={handles.productBookmark}>
       <button
         onClick={handleClick}
-        className="bn pa3 pointer flex bg-action-secondary c-on-action-secondary hover-c-on-action-secondary">
+        className="bn pa3 pointer flex bg-action-secondary c-on-action-secondary hover-c-on-action-secondary"
+      >
         <IconBookmark
           type={filled ? 'filled' : 'outline'}
           fill="currentColor"
